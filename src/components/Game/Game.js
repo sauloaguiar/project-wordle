@@ -29,14 +29,14 @@ function Game() {
     {won && (
       <div className="happy banner">
         <p>
-          <strong>Congratulations!</strong> Got it in
+          <strong>Congratulations!</strong> Got it in 
           <strong>3 guesses</strong>.
         </p>
       </div>
     )}
     {lost && (
       <div className="sad banner">
-        <p>Sorry, the correct answer is <strong>LEARN</strong>.</p>
+        <p>Sorry, the correct answer is <strong>{answer}</strong>.</p>
       </div>)
     }
     {!won && !lost && <Input currentGuess={guess} setGuess={setGuess} submitGuess={handleSubmitGuess}/>}

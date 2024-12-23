@@ -2,7 +2,7 @@ import React from 'react';
 import { range } from '../../utils';
 
 
-function Guess({attempt, answer}) {
+function Guess({attempt}) {
   return (
     <p className='guess'>
       {range(5).map(num => {
