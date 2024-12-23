@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Guess({currentGuess, setGuess, submitGuess}) {
+function Input({currentGuess, setGuess, submitGuess}) {
 
   function handleInputChange(event) {
     setGuess(event.target.value);
@@ -28,4 +28,4 @@ function Guess({currentGuess, setGuess, submitGuess}) {
   );
 }
 
-export default Guess;
+export default Input;
