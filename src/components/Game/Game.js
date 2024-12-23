@@ -15,8 +15,7 @@ function Game() {
   const [attempts, setAttempts] = React.useState([]);
 
   function handleSubmitGuess(value){
-    console.log('guess', value)
-    setAttempts([...attempts, {id: crypto.randomUUID(), value}])
+    setAttempts([...attempts, value])
     setGuess('')
   }
   return <>
